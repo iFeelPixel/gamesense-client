@@ -60,13 +60,13 @@ client.registerGame()
     });
 
 /**
- * Binds the blink handler to the keyboard device.
+ * Binds the blink handler to the mouse device.
  */
 function bindBlinkHandler() {
     var blinkColor = new gamesense.Color(0, 0, 255);
 
     /**
-     * Setup of a event handler for the keyboard device and the function key zone.
+     * Setup of a event handler for the mouse device and the function tactile zone.
      * @type {gamesense.GameEventHandler}
      */
     var functionKeysEventHandler = new gamesense.GameEventHandler(gamesense.DeviceType.MOUSE, gamesense.tactile, blinkColor);
